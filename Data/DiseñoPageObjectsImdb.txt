@@ -1,0 +1,23 @@
+FirstPage: HomePage
+
+Elements:
+imdbLogoImg id="home_img_holder"
+searchTxt name="q"
+searchBtn id="navbar-submit-button"
+
+Methods:
+IsAt()
+searchMovie(movieName)
+
+
+SecondPage: ResultsPage
+
+Elements:
+resultsForLbl //h1[@class = 'findHeader']
+titlesLbl //h3[text() = 'Titles']
+namesLbl //h3[text() = 'Names']
+
+Methods:
+IsAt()
+validateMovieLink (movieName, movieYear)
+clickMovieLink (movieName, movieYear)
